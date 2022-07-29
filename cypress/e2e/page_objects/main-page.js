@@ -1,7 +1,7 @@
 export class MainPage {
 
-    static openAutomationPracticePage() {
-        cy.visit("http://automationpractice.com/index.php");
+    static openAutomationPracticePage(url) {
+        cy.visit(url);
     }
 
     static clickCategory(name) {

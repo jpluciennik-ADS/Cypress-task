@@ -13,7 +13,7 @@ describe("e-shop login", () => {
     })
 
     it("should open main page", () => {
-        MainPage.openAutomationPracticePage();
+        MainPage.openAutomationPracticePage(data.url);
     })
 
     it("should open login page", () => {
