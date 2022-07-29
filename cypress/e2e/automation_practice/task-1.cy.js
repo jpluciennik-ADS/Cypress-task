@@ -3,35 +3,30 @@
 import { LoginPage } from "../page_objects/login-page";
 import { MainPage } from "../page_objects/main-page"
 
-context("e-shop login", () => {
+describe("e-shop login", () => {
 
-    describe("login to page", () => {
-
-        it("should open main page", () => {
-            MainPage.openAutomationPracticePage();
-        })
-
-        it("should open login page", () => {
-            MainPage.clickLogin();
-        })
-
-        it("should input email address", () => {
-            LoginPage.inputLoginData("email", "testing.test@test.com");
-        })
-
-        it("should input password", () => {
-            LoginPage.inputLoginData("passwd", "password123_test");
-        })
-
-        it("should sign in", () => {
-            LoginPage.clickSignIn();
-        })
-
-        it("should check if logged correctly", () => {
-            LoginPage.findAccountData("TEST TEST");
+    let data;
+    before(() => {
+        cy.fixture("task-1").then((taskData) => {
+            data = taskData;
         })
     })
-})
 
-// testing.test@test.com
-// password123_test
+    it("should open main page", () => {
+        MainPage.openAutomationPracticePage();
+    })
+
+    it("should open login page", () => {
+        MainPage.clickLogin();
+    })
+
+    it("should input login data and sign in", () => {
+        LoginPage.inputLoginData("email", data.email);
+        LoginPage.inputLoginData("passwd", data.password);
+        LoginPage.clickSignIn();
+    })
+
+    it("should check if logged correctly", () => {
+        LoginPage.findAccountData("TEST TEST");
+    })
+})
