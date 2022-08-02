@@ -8,7 +8,7 @@ export class LoginPage {
         cy.get(".submit").contains("Sign in").click();
     }
 
-    static findAccountData(name) {
-        cy.get(".header_user_info").contains(name);
+    static checkIfLogged() {
+        cy.get(".page-heading").contains("My account");
     }
 }
