@@ -10,7 +10,7 @@ export class ProductPage {
     }
 
     static addItem(n) {
-        for (let i = 0; i < n; i++) {
+        for (let i = 0; i < n-1; i++) {
             cy.get(".product_quantity_up").click();
         }
         return n;

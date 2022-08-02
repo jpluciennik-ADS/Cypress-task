@@ -1,14 +1,15 @@
-[
-    {
-        "id": 1,
-        "url": "http://automationpractice.com/index.php",
-        "email": "testing.test@test.com",
-        "password": "password123_test"
-    },
-    {
-        "id": 2,
-        "url": "http://automationpractice.com/index.php",
-        "email": "abc@test.com",
-        "password": "abc"
-    }
-]
+{
+    "url": "http://automationpractice.com/index.php",
+    "credentials": [
+        {
+            "id": 1,       
+            "email": "testing.test@test.com",
+            "password": "password123_test"
+        },
+        {
+            "id": 2,
+            "email": "abc@test.com",
+            "password": "abc"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "url": "http://automationpractice.com/index.php",
+    "products": [
+        {
+            "id": 1,
+            "name": "Faded Short Sleeve T-shirts"
+        },
+        {
+            "id": 2,
+            "name": "Blouse"
+        }
+    ]
+}

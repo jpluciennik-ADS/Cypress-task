@@ -31,9 +31,9 @@ describe("e-shop price accuracy", () => {
         })
     })
 
-    let counter = 1;
+    let counter = 0;
     it("should add product to cart and proceed to checkout", () => {
-        counter += ProductPage.addItem(3);
+        counter += ProductPage.addItem(2);
         ProductPage.clickAddToCart();
         ProductPage.clickProceedToCheckout();
     })

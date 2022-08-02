@@ -5,11 +5,11 @@ import { MainPage } from "../page_objects/main-page";
 
 const testData = require("../../fixtures/task-1.json");
 
-testData.forEach((data) => {
-    describe("e-shop login, test case: " + data.id, () => {
+testData.credentials.forEach((user) => {
+    describe("e-shop login, test case: " + user.id, () => {
     
         it("should open main page", () => {
-            MainPage.openAutomationPracticePage(data.url);
+            MainPage.openAutomationPracticePage(testData.url);
         })
     
         it("should open login page", () => {
@@ -17,8 +17,8 @@ testData.forEach((data) => {
         })
     
         it("should input login data and sign in", () => {
-            LoginPage.inputLoginData("email", data.email);
-            LoginPage.inputLoginData("passwd", data.password);
+            LoginPage.inputLoginData("email", user.email);
+            LoginPage.inputLoginData("passwd", user.password);
             LoginPage.clickSignIn();
         })
     
