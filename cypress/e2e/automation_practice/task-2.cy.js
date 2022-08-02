@@ -1,8 +1,9 @@
 /// <reference types="cypress" />
 
 import { MainPage } from "../page_objects/main-page"
-import { ProductPage } from "../page_objects/product-page";
 import { WomanPage } from "../page_objects/woman-page";
+import { ProductPage } from "../page_objects/product-page";
+import { CheckoutPage } from "../page_objects/checkout-page";
 
 describe("e-shop price accuracy", () => {
 
@@ -13,11 +14,8 @@ describe("e-shop price accuracy", () => {
         })
     })
 
-    it("should open main page", () => {
+    it("should open women page", () => {
         MainPage.openAutomationPracticePage(data.url);
-    })
-
-    it("should open dresses page", () => {
         MainPage.clickCategory("Women");
     })
 
@@ -29,11 +27,19 @@ describe("e-shop price accuracy", () => {
     it("should get price of the product", () => {
         ProductPage.readPrice().then(($span) => {
             price = $span.text();
+            price = ProductPage.piceAsNum(price);
         })
     })
 
-    it("Test", () => {
-        
-        console.log(price);
+    let counter = 1;
+    it("should add product to cart and proceed to checkout", () => {
+        counter += ProductPage.addItem(3);
+        ProductPage.clickAddToCart();
+        ProductPage.clickProceedToCheckout();
+    })
+
+    it("should compare prices", () => {
+        CheckoutPage.compareUnitPrice(1, price);
+        CheckoutPage.compareTotalPrice(1, price, counter);
     })
 })
