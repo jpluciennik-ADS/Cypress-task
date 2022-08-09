@@ -18,6 +18,7 @@ export class ProductPage {
 
     static clickAddToCart() {
         cy.get("#add_to_cart").contains("Add to cart").click();
+        cy.wait(2000);
         cy.get("#add_to_cart").contains("Add to cart").click();
     }
 

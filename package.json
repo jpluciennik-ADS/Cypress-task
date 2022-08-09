@@ -25,6 +25,5 @@
     "posttest": "npm run allure:report"
 
   }
-
 }
 

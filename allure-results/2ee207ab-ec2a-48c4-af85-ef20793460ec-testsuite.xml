@@ -1,9 +1,9 @@
 <?xml version='1.0'?>
-<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1659604015735' stop='1659604063424'>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1660040517836' stop='1660040541235'>
     <name>e-shop price accuracy</name>
     <title>e-shop price accuracy</title>
     <test-cases>
-        <test-case start='1659604015756' status='passed' stop='1659604046541'>
+        <test-case start='1660040517855' status='passed' stop='1660040533331'>
             <name>should open women page</name>
             <title>should open women page</title>
             <labels/>
@@ -11,7 +11,7 @@
             <steps/>
             <attachments/>
         </test-case>
-        <test-case start='1659604046560' status='passed' stop='1659604053318'>
+        <test-case start='1660040533360' status='passed' stop='1660040535890'>
             <name>should open blouse page</name>
             <title>should open blouse page</title>
             <labels/>
@@ -19,7 +19,7 @@
             <steps/>
             <attachments/>
         </test-case>
-        <test-case start='1659604053332' status='passed' stop='1659604053348'>
+        <test-case start='1660040535916' status='passed' stop='1660040535946'>
             <name>should get price of the product</name>
             <title>should get price of the product</title>
             <labels/>
@@ -27,7 +27,7 @@
             <steps/>
             <attachments/>
         </test-case>
-        <test-case start='1659604053356' status='passed' stop='1659604063345'>
+        <test-case start='1660040535964' status='passed' stop='1660040541165'>
             <name>should add product to cart and proceed to checkout</name>
             <title>should add product to cart and proceed to checkout</title>
             <labels/>
@@ -35,7 +35,7 @@
             <steps/>
             <attachments/>
         </test-case>
-        <test-case start='1659604063365' status='passed' stop='1659604063424'>
+        <test-case start='1660040541183' status='passed' stop='1660040541235'>
             <name>should compare prices</name>
             <title>should compare prices</title>
             <labels/>

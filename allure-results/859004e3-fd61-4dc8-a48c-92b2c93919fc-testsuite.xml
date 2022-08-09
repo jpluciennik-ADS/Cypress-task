@@ -1,9 +1,9 @@
 <?xml version='1.0'?>
-<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1659604071175' stop='1659604101445'>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1660040547146' stop='1660040570405'>
     <name>data-driven adding to cart</name>
     <title>data-driven adding to cart</title>
     <test-cases>
-        <test-case start='1659604071175' status='passed' stop='1659604101445'>
+        <test-case start='1660040547146' status='passed' stop='1660040570405'>
             <name>should add items to cart</name>
             <title>should add items to cart</title>
             <labels/>

@@ -1,9 +1,9 @@
 <?xml version='1.0'?>
-<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1659603981290' stop='1659604005356'>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1660040492403' stop='1660040509845'>
     <name>e-shop login, test case: 2</name>
     <title>e-shop login, test case: 2</title>
     <test-cases>
-        <test-case start='1659603981290' status='passed' stop='1659603985042'>
+        <test-case start='1660040492403' status='passed' stop='1660040496888'>
             <name>should open main page</name>
             <title>should open main page</title>
             <labels/>
@@ -11,7 +11,7 @@
             <steps/>
             <attachments/>
         </test-case>
-        <test-case start='1659603985070' status='passed' stop='1659603993696'>
+        <test-case start='1660040496958' status='passed' stop='1660040500180'>
             <name>should open login page</name>
             <title>should open login page</title>
             <labels/>
@@ -19,7 +19,7 @@
             <steps/>
             <attachments/>
         </test-case>
-        <test-case start='1659603993713' status='passed' stop='1659604001127'>
+        <test-case start='1660040500208' status='passed' stop='1660040505528'>
             <name>should input login data and sign in</name>
             <title>should input login data and sign in</title>
             <labels/>
@@ -27,7 +27,7 @@
             <steps/>
             <attachments/>
         </test-case>
-        <test-case start='1659604001142' status='failed' stop='1659604005299'>
+        <test-case start='1660040505552' status='failed' stop='1660040509789'>
             <name>should check if logged correctly</name>
             <title>should check if logged correctly</title>
             <labels/>
